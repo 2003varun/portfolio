@@ -458,3 +458,167 @@ footer {
 .d3 { transition-delay: 0.3s; }
 .d4 { transition-delay: 0.4s; }
 .d5 { transition-delay: 0.5s; }
+/* media query */
+/* =============================================
+   📱 RESPONSIVE DESIGN (TABLET + MOBILE)
+   ============================================= */
+
+/* ===== TABLET (<= 1024px) ===== */
+@media (max-width: 1024px) {
+
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-desc {
+    max-width: 100%;
+  }
+
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-blob {
+    width: 300px;
+    height: 420px;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-visual {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .exp-card,
+  .edu-card {
+    flex-direction: column;
+  }
+
+  .contact-inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+
+/* ===== MOBILE (<= 768px) ===== */
+@media (max-width: 768px) {
+
+  nav {
+    padding: 1rem 4%;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 5rem 4% 3rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-desc {
+    font-size: 0.85rem;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .hero-blob {
+    width: 260px;
+    height: 360px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-sub {
+    font-size: 0.8rem;
+  }
+
+  section {
+    padding: 4rem 4%;
+  }
+
+  .skill-card {
+    padding: 1.4rem;
+  }
+
+  .project-info {
+    padding: 1.5rem;
+  }
+
+  .exp-card {
+    padding: 1.6rem;
+  }
+
+  .edu-card {
+    padding: 1.6rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* ===== SMALL MOBILE (<= 480px) ===== */
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .btn-yellow,
+  .btn-white-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links {
+    font-size: 0.8rem;
+  }
+
+  .hero-blob {
+    width: 220px;
+    height: 300px;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .exp-role {
+    font-size: 1rem;
+  }
+
+  .edu-degree {
+    font-size: 0.95rem;
+  }
+}
