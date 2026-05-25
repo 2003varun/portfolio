@@ -458,9 +458,10 @@ footer {
 .d3 { transition-delay: 0.3s; }
 .d4 { transition-delay: 0.4s; }
 .d5 { transition-delay: 0.5s; }
-/* media query */
+
+
 /* =============================================
-   📱 RESPONSIVE DESIGN (TABLET + MOBILE)
+   📱 RESPONSIVE MEDIA QUERIES (ADDED)
    ============================================= */
 
 /* ===== TABLET (<= 1024px) ===== */
@@ -491,6 +492,9 @@ footer {
     width: 300px;
     height: 420px;
   }
+
+  .hero-badge.t { right: 0; }
+  .hero-badge.b { left: 0; }
 
   .project-card {
     flex-direction: column;
@@ -548,16 +552,16 @@ footer {
     height: 360px;
   }
 
+  section {
+    padding: 4rem 4%;
+  }
+
   .section-title {
     font-size: 1.6rem;
   }
 
   .section-sub {
     font-size: 0.8rem;
-  }
-
-  section {
-    padding: 4rem 4%;
   }
 
   .skill-card {
@@ -590,15 +594,15 @@ footer {
     font-size: 1.6rem;
   }
 
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
   .btn-yellow,
   .btn-white-outline {
     width: 100%;
     justify-content: center;
-  }
-
-  .hero-cta {
-    flex-direction: column;
-    width: 100%;
   }
 
   .nav-links {
